@@ -52,3 +52,39 @@ class modulesSmartFactor():
         CAGR = cummulativeProducts^(1/len(dataSet))
         
         return CAGR
+
+    # Return the quintile of market cap and y-axis
+    # titles of plots ie. limits of quintiles gotten 
+    # by last market  cap value in quintile
+    # '''
+    # def splitMarketDataAndMarketCapLimits(self, marketDataFile):
+        
+    #     originalMarketDataFile = self.openCsv(marketDataFile)
+    #     groupedMarketCapTickers = originalMarketDataFile.sort_values(['MarketCap'], ascending=[False,])
+    #     splitFiveWaysByMarketValue= np.array_split(groupedMarketCapTickers, 5)
+        
+    #     listLimitMarketCaps = ['>'+str("{:,}".format(dataframe['MarketCap'].iloc[-1])) for dataframe in splitFiveWaysByMarketValue]
+        
+    #     quintileTickersAndLimits ={listLimitMarketCaps[num] : splitFiveWaysByMarketValue[num] for num in range(len(splitFiveWaysByMarketValue))}
+        
+    #     return quintileTickersAndLimits
+    
+    
+    # '''
+    
+    # '''
+    # def janeDoe(self, dfVertical, verticalSize, dfHorizontal, horizontalSize):
+        
+    # splitVertical = np.array_split(dfVertical, verticalSize)
+        # splitHorizontal = np.array_split(dfHorizontal, horizontalSize)
+        
+        
+          
+
+    
+
+#splitPrint = objectTwo.splitMarketDataAndMarketCapLimits('/Users/adamszequi/SmartFactor/Smart-Factor-Research-Files-5/Master Dataset File/marketCapDataCleaned.csv')
+#pathReturns = '/Users/adamszequi/SmartFactor/Smart-Factor-Research-Files-5/RevenuePerShare/returnsData.json'
+
+#print(splitPrint)
+

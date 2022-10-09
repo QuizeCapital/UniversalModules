@@ -52,3 +52,5 @@ class modulesSmartFactor():
         CAGR = cummulativeProducts^(1/len(dataSet))
         
         return CAGR
+
+
