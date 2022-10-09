@@ -32,6 +32,11 @@ class modulesSmartFactor():
         return pd.read_csv(csvFileLink)
     
      
+    '''
+    This func
+    '''
+    
+    # '''
     # Return the quintile of market cap and y-axis
     # titles of plots ie. limits of quintiles gotten 
     # by last market  cap value in quintile

@@ -32,22 +32,24 @@ class modulesSmartFactor():
         return pd.read_csv(csvFileLink)
     
      
-    # Return the quintile of market cap and y-axis
-    # titles of plots ie. limits of quintiles gotten 
-    # by last market  cap value in quintile
-    # '''
-    # def splitMarketDataAndMarketCapLimits(self, marketDataFile):
-        
-    #     originalMarketDataFile = self.openCsv(marketDataFile)
-    #     groupedMarketCapTickers = originalMarketDataFile.sort_values(['MarketCap'], ascending=[False,])
-    #     splitFiveWaysByMarketValue= np.array_split(groupedMarketCapTickers, 5)
-        
-    #     listLimitMarketCaps = ['>'+str("{:,}".format(dataframe['MarketCap'].iloc[-1])) for dataframe in splitFiveWaysByMarketValue]
-        
-    #     quintileTickersAndLimits ={listLimitMarketCaps[num] : splitFiveWaysByMarketValue[num] for num in range(len(splitFiveWaysByMarketValue))}
-        
-    #     return quintileTickersAndLimits
     
+    
+    '''
+    Return the quintile of market cap and y-axis
+    titles of plots ie. limits of quintiles gotten 
+    by last market  cap value in quintile
+    '''
+    def splitMarketDataAndMarketCapLimits(self, marketDataFile):
+        
+        originalMarketDataFile = self.openCsv(marketDataFile)
+        groupedMarketCapTickers = originalMarketDataFile.sort_values(['MarketCap'], ascending=[False,])
+        splitFiveWaysByMarketValue= np.array_split(groupedMarketCapTickers, 5)
+        
+        listLimitMarketCaps = ['>'+str("{:,}".format(dataframe['MarketCap'].iloc[-1])) for dataframe in splitFiveWaysByMarketValue]
+        
+        quintileTickersAndLimits ={listLimitMarketCaps[num] : splitFiveWaysByMarketValue[num] for num in range(len(splitFiveWaysByMarketValue))}
+        
+        return quintileTickersAndLimits
     
     # '''
     
