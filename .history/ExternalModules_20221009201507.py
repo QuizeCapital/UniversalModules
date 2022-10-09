@@ -31,16 +31,7 @@ class modulesSmartFactor():
        
         return pd.read_csv(csvFileLink)
     
-    '''
-    This function calculates the annual growth rate using a linked return method 
-    ie. returns that have been multiplied by each other to create a compound return.
-    The returns are compounded for the end of the investment period
-    
-    '''
-    def compoundedAnnualGrowthRate (self):
-        
-        
-        
+     
     # Return the quintile of market cap and y-axis
     # titles of plots ie. limits of quintiles gotten 
     # by last market  cap value in quintile

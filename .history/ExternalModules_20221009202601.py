@@ -34,7 +34,7 @@ class modulesSmartFactor():
     '''
     This function calculates the annual growth rate using a linked return method 
     ie. returns that have been multiplied by each other to create a compound return.
-    The returns are compounded for the end of the investment period
+    The 
     
     '''
     def compoundedAnnualGrowthRate (self):

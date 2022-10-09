@@ -32,9 +32,7 @@ class modulesSmartFactor():
         return pd.read_csv(csvFileLink)
     
     '''
-    This function calculates the annual growth rate using a linked return method 
-    ie. returns that have been multiplied by each other to create a compound return.
-    The returns are compounded for the end of the investment period
+    This function calculates the annual growth rate using a linked return method ie. returns that have been multiplied by each other to create a compound return.
     
     '''
     def compoundedAnnualGrowthRate (self):
