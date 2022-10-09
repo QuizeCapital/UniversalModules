@@ -43,21 +43,9 @@ class modulesSmartFactor():
     where r  is the annual return /log annual return
     
     CAGR = (total linked return)^1/t
-    where t is the number of periods
+    where t
     '''
-    def compoundedAnnualGrowthRate (self, dataSet):
-        
-        cummulativeProducts = ((dataSet.cumprod()).iloc[-1])-1
-        
-        #cummulativeReturns = cummulativeProducts.iloc[-1]
-        
-        return cummulativeProducts
-
-        
-        
-        
-        
-        
+    def compoundedAnnualGrowthRate (self):
         
         
         

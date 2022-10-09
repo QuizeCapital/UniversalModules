@@ -39,25 +39,10 @@ class modulesSmartFactor():
     Fomula for linked returns is : 
     linked return^t = (r^t * r^t-1)
     linked return^t+1 = linked return^t * r^t+1
-    total linked return = linked return^tfinal -1
-    where r  is the annual return /log annual return
     
-    CAGR = (total linked return)^1/t
-    where t is the number of periods
+    
     '''
-    def compoundedAnnualGrowthRate (self, dataSet):
-        
-        cummulativeProducts = ((dataSet.cumprod()).iloc[-1])-1
-        
-        #cummulativeReturns = cummulativeProducts.iloc[-1]
-        
-        return cummulativeProducts
-
-        
-        
-        
-        
-        
+    def compoundedAnnualGrowthRate (self):
         
         
         

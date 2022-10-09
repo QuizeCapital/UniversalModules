@@ -47,12 +47,11 @@ class modulesSmartFactor():
     '''
     def compoundedAnnualGrowthRate (self, dataSet):
         
-        cummulativeProducts = ((dataSet.cumprod()).iloc[-1])-1
+        cummulativeProducts = (dataSet.cumprod())
         
-        #cummulativeReturns = cummulativeProducts.iloc[-1]
+        cummulativeReturn = cummulativeProducts.iol[-1]
         
-        return cummulativeProducts
-
+        return cummulativeReturns
         
         
         
