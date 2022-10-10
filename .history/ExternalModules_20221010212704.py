@@ -70,8 +70,8 @@ class modulesSmartFactor():
     given a particular CAGR. It uses the standard time value of future investments formula :
     FV = I*(1+r/n)^(n*t)
     This function takes the principal, compunding frequency, total time of investments and annual
-    growth of returns as inputs.
-    It returns the dollar value of return on investments
+    
+    
     '''
     @dollarDecorator
     def valueOfXInvestedWithoutDividends(self, principal,compoundingFrequency, time, CAGR):

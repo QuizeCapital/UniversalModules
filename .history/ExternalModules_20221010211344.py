@@ -54,33 +54,20 @@ class modulesSmartFactor():
 
         return ((cummulativeReturn.iloc[-1])**(1/len(dataSet)))-1
     
-    '''
-    This python decorator is created to add the dollar sign 
-    before outputs of functionns
-    '''
     # Decorator function
-    def dollarDecorator(fn):
+    def decorator(fn):
         def add_dollar(*args, **kwargs):
             return '$' + str(fn(*args,**kwargs))
-        return add_dollar
-    
-    
+    return add_dollar
     '''
     This functions calculates the dollar value return on investments 
-    given a particular CAGR. It uses the standard time value of future investments formula :
-    FV = I*(1+r/n)^(n*t)
-    This function takes the principal, compunding frequency, total time of investments and annual
-    growth of returns as inputs.
-    It returns the dollar value of return on investments
+    given a particular CAGR. It uses the standard time value of future investments formula 
+    
+    FV = I*(1+r^n/t)^(n*t)
     '''
-    @dollarDecorator
     def valueOfXInvestedWithoutDividends(self, principal,compoundingFrequency, time, CAGR):
         
-        return principal*(
-            (1+
-             (CAGR/compoundingFrequency))
-            **(time*compoundingFrequency)
-            )
+        return principal*(1+(CAGR**(compoundingFrequency/time)))
         
         
         

@@ -71,7 +71,7 @@ class modulesSmartFactor():
     FV = I*(1+r/n)^(n*t)
     This function takes the principal, compunding frequency, total time of investments and annual
     growth of returns as inputs.
-    It returns the dollar value of return on investments
+    It returns the dollar value of r
     '''
     @dollarDecorator
     def valueOfXInvestedWithoutDividends(self, principal,compoundingFrequency, time, CAGR):
