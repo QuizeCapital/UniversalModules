@@ -88,12 +88,11 @@ class modulesSmartFactor():
     strategy for three consecutive years, what percentage of times would the 
     investor outperform the Universe?
     This functio takes a dataframe as inputs and returns another dataframe as with 
-    rolling mean column as output. 
-    N.B The dataframe has to contain a dat as index for it work.
+    rolling mean column as output.add()
     '''
     def 3YearRollingReturn(self, df):
         
-        return df.rolling(3, min_periods=1).mean()
+        return df.rolling(2, min_periods=1).mean()
         
         
         

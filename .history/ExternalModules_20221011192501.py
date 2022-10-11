@@ -89,11 +89,11 @@ class modulesSmartFactor():
     investor outperform the Universe?
     This functio takes a dataframe as inputs and returns another dataframe as with 
     rolling mean column as output. 
-    N.B The dataframe has to contain a dat as index for it work.
+    N.B The dataframe has to contain
     '''
     def 3YearRollingReturn(self, df):
         
-        return df.rolling(3, min_periods=1).mean()
+        return df.rolling(2, min_periods=1).mean()
         
         
         
