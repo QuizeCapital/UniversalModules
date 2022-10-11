@@ -91,11 +91,8 @@ class modulesSmartFactor():
     rolling mean column as output. 
     N.B The dataframe has to contain a dat as index for it work.
     '''
-    def threeYearRollingReturn(self, df):
-        
-        rollingMean = df.rolling(3, min_periods=1).mean()
-        
-        return rollingMean
+    def 3YearRollingReturn(self, df):
+        return df.rolling(3, min_periods=1).mean()
         
         
         
