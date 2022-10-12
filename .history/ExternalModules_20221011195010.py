@@ -93,6 +93,8 @@ class modulesSmartFactor():
     '''
     def threeYearRollingReturn(self, df):
         
+        
+        
         return df.rolling(3, min_periods=1).mean()
         
         
