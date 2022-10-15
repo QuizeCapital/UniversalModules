@@ -50,10 +50,10 @@ class modulesSmartFactor():
     def compoundedAnnualGrowthRate(self, dataSet):
         
         cummulativeReturn = (dataSet.cumprod())
-        totalCummulativeReturn = (cummulativeReturn.iloc[-1])-1
+        # totalCummulativeReturn = (cummulativeReturn.iloc[-1])-1
 
-        return ((cummulativeReturn.iloc[-1])**(1/len(dataSet)))-1
-        #return cummulativeReturn
+        # return ((cummulativeReturn.iloc[-1])**(1/len(dataSet)))-1
+        return cu
     
     '''
     This python decorator is created to add the dollar sign 
