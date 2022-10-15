@@ -54,7 +54,7 @@ class modulesSmartFactor():
         #totalCummulativeReturn = (cummulativeReturn.iloc[-1])-1
         #totalCummulativeReturn = (cummulativeReturn.tail(1))-1
         #print((1/len(dataSet)))
-        print(((cummulativeReturn.tail(1))**(1/len(dataSet)))-1)
+        print()
         try:
         #suppose that number2 is a float
             return ((cummulativeReturn.tail(1))**(1/len(dataSet)))-1

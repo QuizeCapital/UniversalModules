@@ -47,23 +47,13 @@ class modulesSmartFactor():
     
     This function takes a dataframe/series as inputs and returns a CAGR value
     '''
-
     def compoundedAnnualGrowthRate(self, dataSet):
         
         cummulativeReturn = (dataSet.cumprod())
-        #totalCummulativeReturn = (cummulativeReturn.iloc[-1])-1
+        totalCummulativeReturn = (cummulativeReturn.iloc[-1])-1
         #totalCummulativeReturn = (cummulativeReturn.tail(1))-1
-        #print((1/len(dataSet)))
-        print(((cummulativeReturn.tail(1))**(1/len(dataSet)))-1)
-        try:
-        #suppose that number2 is a float
-            return ((cummulativeReturn.tail(1))**(1/len(dataSet)))-1
-        except ZeroDivisionError:
-            return None
 
-        #return ((cummulativeReturn.iloc[-1])**(1/len(dataSet)))-1
-        #return ((cummulativeReturn.tail(1))**(1/len(dataSet)))-1
-
+        return ((cummulativeReturn.iloc[-1])**(1/len(dataSet)))-1
         #return cummulativeReturn
     
     '''
